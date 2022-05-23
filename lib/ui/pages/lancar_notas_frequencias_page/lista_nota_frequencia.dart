@@ -92,11 +92,11 @@ class _NotasFrequenciasPageState extends State<NotasFrequenciasPage> {
     int frequencia = notaFrequencia.frequencia;
 
     String resultado = "\nNota: $nota \nFrequência: $frequencia%";
-    if (nota >= 70 && frequencia >= 30.0) {
+    if (nota >= 60 && frequencia >= 30) {
       return "Aprovado" + resultado;
-    } else if (nota < 70.0) {
+    } else if (nota < 60) {
       return "Reprovado por nota." + resultado;
-    } else if (frequencia < 30.0) {
+    } else if (frequencia < 30) {
       return "Reprovado por frequência." + resultado;
     }
     return "";
