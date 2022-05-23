@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trabalho_final_flutter/datasources/local/aluno_helper.dart';
 
 import '../../../datasources/local/nota_frequencia_helper.dart';
 import '../../../models/aluno.dart';
@@ -8,9 +9,9 @@ import 'cadastrar_notas_frequencias.dart';
 
 class NotasFrequenciasPage extends StatefulWidget {
   final Disciplina disciplina;
-  final Aluno? aluno;
+ // final Aluno? aluno;
 
-  const NotasFrequenciasPage(this.disciplina,  {this.aluno,Key? key}) : super(key: key);
+  const NotasFrequenciasPage(this.disciplina,  {Key? key}) : super(key: key);
 
   @override
   State<NotasFrequenciasPage> createState() => _NotasFrequenciasPageState();
@@ -62,7 +63,7 @@ class _NotasFrequenciasPageState extends State<NotasFrequenciasPage> {
           padding: const EdgeInsets.all(16),
           child: Column(
               children:[
-                Text(notaFrequencia.aluno.toString(), style: const TextStyle(fontSize: 28),),
+                Text( notaFrequencia.aluno, style: const TextStyle(fontSize: 28),),
                 Text( _resultado(notaFrequencia),
                   style: const TextStyle(fontSize: 15),
                   textAlign: TextAlign.center,

@@ -16,7 +16,7 @@ class NotaFrequencia {
   int? codigo;
   int nota;
   int frequencia;
-  int aluno;
+  String aluno;
   Disciplina disciplina;
 
   NotaFrequencia({
@@ -32,7 +32,7 @@ class NotaFrequencia {
         codigo: int.tryParse(map[codigo_coluna].toString()),
         nota: int.parse(map[nota_coluna].toString()),
         frequencia: int.parse(map[frequencia_coluna].toString()),
-        aluno: int.parse(map[aluno_coluna].toString()),
+        aluno: map[aluno_coluna].toString(),
         disciplina: disciplina
         );
   }

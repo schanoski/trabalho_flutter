@@ -13,7 +13,7 @@ import 'disciplina_helper.dart';
       $nota_coluna INTEGER(3),
       $frequencia_coluna INTEGER(3),
       $disciplina_coluna INTEGER,
-      $aluno_coluna INTEGER,
+      $aluno_coluna TEXT,
       FOREIGN KEY($disciplina_coluna) REFERENCES $disciplinaTabela($disciplinaCodigo),
       FOREIGN KEY($aluno_coluna) REFERENCES $alunoTabela($alunoCodigo)
     ) ''';

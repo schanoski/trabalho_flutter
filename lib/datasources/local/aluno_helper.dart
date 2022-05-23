@@ -60,6 +60,7 @@ class AlunoHelper {
     return null;
   }
 
+
   Future<int> getTotal() async {
     Database db = await BancoDados().db;
 

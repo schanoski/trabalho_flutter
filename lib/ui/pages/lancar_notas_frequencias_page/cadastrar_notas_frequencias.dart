@@ -48,7 +48,7 @@ class _CadastrarNotasFrequenciasState extends State<CadastrarNotasFrequencias> {
       setState(() {
         _aluno.add(DropdownMenuItem(
           child: Text(aluno.nome),
-          value: aluno.codigo,
+          value: aluno.nome,
         ));
       });
     });
